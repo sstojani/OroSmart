@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@inject LanguageService language
+
+<div class="text-center">
+    <h1 class="display-4">@language.Getkey("welcome")</h1>
+    <p>@language.Getkey("learn-about") <a href="https://docs.microsoft.com/aspnet/core">@language.Getkey("building")</a>.</p>
+</div>
